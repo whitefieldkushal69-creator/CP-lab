@@ -1,0 +1,26 @@
+
+C program to perform Number Factorial of a number 
+
+
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long fact = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if(n < 0) {
+        printf("Factorial of negative numbers is not possible.\n");
+    }
+    else {
+        for(i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        printf("Factorial of %d is %lld\n", n, fact);
+    }
+
+    return 0;
+}
